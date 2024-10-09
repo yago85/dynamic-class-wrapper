@@ -1,0 +1,35 @@
+{
+  "name": "dynamic-class-wrapper",
+  "version": "1.0.0",
+  "description": "A customizable wrapper for applying classes based on route, context, and theme. Component for Next.js",
+  "main": "dist/DynamicClassWrapper.js",
+  "types": "dist/DynamicClassWrapper.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "next.js",
+    "dynamic classes",
+    "page-wrapper",
+    "responsive",
+    "react",
+    "context",
+    "dark mode",
+    "light mode",
+    "conditional styling"
+  ],
+  "author": "Aleksey Kartsev",
+  "license": "MIT",
+  "peerDependencies": {
+    "clsx": "^2.1.1",
+    "next": "^14.2.15",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0"
+  }
+}
