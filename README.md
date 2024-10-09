@@ -1,5 +1,5 @@
 
-# Dynamic Class Wrapper
+# Dynamic Class Wrapper for Next.js
 
 dynamic-class-wrapper is a customizable wrapper component for Next.js that dynamically applies classes based on the route, theme mode, device size, and optional context.
 ## Installation
