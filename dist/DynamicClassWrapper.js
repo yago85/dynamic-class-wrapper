@@ -6,7 +6,7 @@ var react_1 = require("react");
 var navigation_1 = require("next/navigation");
 var clsx_1 = require("clsx");
 var next_themes_1 = require("next-themes");
-var PageWrapper = function (_a) {
+var DynamicClassWrapper = function (_a) {
     var children = _a.children, className = _a.className, fallbackClassName = _a.fallbackClassName, applyClassFor = _a.applyClassFor, darkModeClass = _a.darkModeClass, lightModeClass = _a.lightModeClass, mobileClass = _a.mobileClass, tabletClass = _a.tabletClass, desktopClass = _a.desktopClass, _b = _a.contextClassMap, contextClassMap = _b === void 0 ? {} : _b, context = _a.context;
     var pathname = (0, navigation_1.usePathname)();
     var theme = (0, next_themes_1.useTheme)().theme;
@@ -33,4 +33,4 @@ var PageWrapper = function (_a) {
     var contextClass = context ? contextClassMap[context] : "";
     return ((0, jsx_runtime_1.jsx)("div", { className: (0, clsx_1.clsx)(isRouteMatch ? className : fallbackClassName, theme === "dark" ? darkModeClass : lightModeClass, screenClass, contextClass), children: children }));
 };
-exports.default = PageWrapper;
+exports.default = DynamicClassWrapper;

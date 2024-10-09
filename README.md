@@ -11,20 +11,20 @@ npm install dynamic-class-wrapper
 ```
 
 ## Basic Usage
-You can wrap your content with the PageWrapper component and set conditional classes based on specific routes, themes, or screen sizes.
+You can wrap your content with the DynamicClassWrapper component and set conditional classes based on specific routes, themes, or screen sizes.
 
 ```javascript
-import PageWrapper from "dynamic-class-wrapper";
+import DynamicClassWrapper from "dynamic-class-wrapper";
 
 export default function MyApp() {
   return (
-    <PageWrapper
+    <DynamicClassWrapper
       applyClassFor="/about"
       className="about-class"
       fallbackClassName="default-class"
     >
       <main>Your content here</main>
-    </PageWrapper>
+    </DynamicClassWrapper>
   );
 }
 ```
@@ -54,7 +54,7 @@ export default function MyApp() {
 Use applyClassFor to set a class for a specific route, and a fallback for others.
 
 ```javascript
-<PageWrapper
+<DynamicClassWrapper
   applyClassFor="/about"
   className="bg-about-page"
   fallbackClassName="bg-default"
@@ -65,7 +65,7 @@ Use applyClassFor to set a class for a specific route, and a fallback for others
 Combine darkModeClass and lightModeClass to adjust styles based on the current theme.
 
 ```javascript
-<PageWrapper
+<DynamicClassWrapper
   darkModeClass="bg-dark-mode"
   lightModeClass="bg-light-mode"
 />
@@ -74,7 +74,7 @@ Combine darkModeClass and lightModeClass to adjust styles based on the current t
 Set device-specific classes with mobileClass, tabletClass, and desktopClass.
 
 ```javascript
-<PageWrapper
+<DynamicClassWrapper
   mobileClass="bg-mobile"
   tabletClass="bg-tablet"
   desktopClass="bg-desktop"
@@ -83,7 +83,7 @@ Set device-specific classes with mobileClass, tabletClass, and desktopClass.
 ### Example 4: Using Context to Define Specific Classes
 Define classes based on the context of the page, such as home or about, for even more control.
 ```javascript
-<PageWrapper
+<DynamicClassWrapper
   context="home"
   contextClassMap={{
     home: "bg-home-page",

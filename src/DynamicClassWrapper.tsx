@@ -5,7 +5,7 @@ import {usePathname} from "next/navigation";
 import {clsx} from "clsx";
 import {useTheme} from "next-themes";
 
-interface PageWrapperProps {
+interface DynamicClassWrapperProps {
     children: React.ReactNode;
     className?: string;
     fallbackClassName?: string;
@@ -19,7 +19,7 @@ interface PageWrapperProps {
     context?: string;
 }
 
-const PageWrapper: React.FC<PageWrapperProps> = ({
+const DynamicClassWrapper: React.FC<DynamicClassWrapperProps> = ({
                                                      children,
                                                      className,
                                                      fallbackClassName,
@@ -73,4 +73,4 @@ const PageWrapper: React.FC<PageWrapperProps> = ({
     );
 };
 
-export default PageWrapper;
+export default DynamicClassWrapper;

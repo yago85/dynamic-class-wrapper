@@ -1,5 +1,5 @@
 import React from "react";
-interface PageWrapperProps {
+interface DynamicClassWrapperProps {
     children: React.ReactNode;
     className?: string;
     fallbackClassName?: string;
@@ -12,5 +12,5 @@ interface PageWrapperProps {
     contextClassMap?: Record<string, string>;
     context?: string;
 }
-declare const PageWrapper: React.FC<PageWrapperProps>;
-export default PageWrapper;
+declare const DynamicClassWrapper: React.FC<DynamicClassWrapperProps>;
+export default DynamicClassWrapper;
