@@ -1,9 +1,13 @@
 {
   "name": "dynamic-class-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable wrapper for applying classes based on route, context, and theme. Component for Next.js",
   "main": "dist/DynamicClassWrapper.js",
   "types": "dist/DynamicClassWrapper.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yago85/dynamic-class-wrapper.git"
+  },
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
