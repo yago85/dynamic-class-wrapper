@@ -30,7 +30,6 @@ var PageWrapper = function (_a) {
             window.removeEventListener("resize", updateScreenClass);
         };
     }, [mobileClass, tabletClass, desktopClass]);
-    // Получаем класс, основанный на текущем контексте
     var contextClass = context ? contextClassMap[context] : "";
     return ((0, jsx_runtime_1.jsx)("div", { className: (0, clsx_1.clsx)(isRouteMatch ? className : fallbackClassName, theme === "dark" ? darkModeClass : lightModeClass, screenClass, contextClass), children: children }));
 };

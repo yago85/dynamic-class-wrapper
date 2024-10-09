@@ -57,7 +57,6 @@ const PageWrapper: React.FC<PageWrapperProps> = ({
         };
     }, [mobileClass, tabletClass, desktopClass]);
 
-    // Получаем класс, основанный на текущем контексте
     const contextClass = context ? contextClassMap[context] : "";
 
     return (
